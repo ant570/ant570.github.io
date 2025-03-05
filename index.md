@@ -1,3 +1,6 @@
+---
+layout: none
+---
 # Najlepsze Filmy
 ## [10. Forrest Gump](10.md)
 Rok produkcji: 1994
