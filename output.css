@@ -19,6 +19,18 @@
   background: linear-gradient(#e66465, #9198e5);
 }
 
+.link {
+  display: inline-block;
+  background: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #341778;
+  align-items: center;
+}
+.link a {
+  color: white;
+}
+
 @media (max-width: 800px) {
   .hide-on-small {
     display: none;
@@ -44,6 +56,9 @@
   .hover-effect2:hover {
     transition: background-color 1s ease-in-out;
     background-color: #08cf26;
+  }
+  .link:hover {
+    background: #0056b3;
   }
 }
 
