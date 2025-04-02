@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Tailwind</title>
+    <link rel="stylesheet" href="output-ogon.css">
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 text-white p-4 shadow-lg">
+        <h1 class="text-3xl font-bold">Blok 2</h1>
+        <h2 class="text-xl">Lab 3</h2>
+    </header>
+    <div class="flex flex-col md:flex-row xl:flex-row xl:hover:flex-row-reverse">
+        <div class = "xl:flex-auto md:flex-none">
+            <article class="p-4 bg-green-100 shadow-md">
+                <h2 class="text-xl text-sky-500">Informacje o stronie</h2>
+                <p class="text-green-600">Ta strona zawiera przykładowe elementy HTML, takie jak <strong>tabela</strong>, <em>lista</em>, obrazek i formularz.</p>
+            </article>
+        </div>    
+        <div class="xl:flex-auto md:flex-none">
+            <section class="p-6 bg-gradient-to-r from-yellow-200 to-yellow-50 shadow-2xl rounded-2xl">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <table class="table-auto w-full border-collapse border border-gray-400 bg-white">
+                        <caption class="text-xl font-semibold p-4 bg-gray-100 border-b border-gray-400">
+                            Lista użytkowników
+                        </caption>
+                        <thead class="bg-gradient-to-r from-gray-400 to-gray-300 text-white">
+                            <tr>
+                                <th class="border border-gray-500 p-3 text-left">ID</th>
+                                <th class="border border-gray-500 p-3 text-left">Imię</th>
+                                <th class="border border-gray-500 p-3 text-left">Wiek</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd:bg-gray-50 even:bg-gray-200 hover:bg-purple-200 transition duration-200">
+                                <td class="border border-gray-500 p-3">1</td>
+                                <td class="border border-gray-500 p-3">Alicja</td>
+                                <td class="border border-gray-500 p-3">25</td>
+                            </tr>
+                            <tr class="odd:bg-gray-50 even:bg-gray-200 hover:bg-purple-200 transition duration-200">
+                                <td class="border border-gray-500 p-3">2</td>
+                                <td class="border border-gray-500 p-3">Jan</td>
+                                <td class="border border-gray-500 p-3">30</td>
+                            </tr>
+                            <tr class="odd:bg-gray-50 even:bg-gray-200 hover:bg-purple-200 transition duration-200">
+                                <td class="border border-gray-500 p-3">3</td>
+                                <td class="border border-gray-500 p-3">Maria</td>
+                                <td class="border border-gray-500 p-3">28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div class="xl:flex-auto md:flex-none">
+            <section class="p-4 bg-red-100 shadow-xl">
+                <h2 class="text-xl text-orange-500">Lista rzeczy do zrobienia</h2>
+                <ol class="list-decimal pl-5">
+                    <li class="text-blue-600/100 dark:text-sky-400/100">Nauczyć się HTML</li>
+                    <li class="text-blue-600/100 dark:text-sky-400/75">Przećwiczyć CSS</li>
+                    <li class="text-blue-600/100 dark:text-sky-400/25">Zrozumieć JavaScript</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+    <section class="p-4">
+        <h2 class="text-xl text-teal-500">Obrazek</h2>
+        <img src="example.jpg" alt="Przykładowy obrazek przedstawiający grafikę demonstracyjną" width="300" class="shadow-lg">
+    </section>
+    <section class="p-4">
+        <h2 class="text-xl text-indigo-500">Formularz kontaktowy</h2>
+        <form class="bg-white p-4 shadow-md rounded-lg">
+            <label class="block mb-2">Imię:<input type="text" class="border p-2 w-full"></label>
+            <label class="block mb-2">Wiek:<input type="number" class="border p-2 w-full"></label>
+            <label class="block mb-2">Wybierz miasto:
+                <select class="border p-2 w-full">
+                    <optgroup label="Polska">
+                        <option value="warszawa">Warszawa</option>
+                        <option value="krakow">Kraków</option>
+                    </optgroup>
+                    <optgroup label="Zagranica">
+                        <option value="londyn">Londyn</option>
+                        <option value="berlin">Berlin</option>
+                    </optgroup>
+                </select>
+            </label>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">Wyślij</button>
+        </form>
+    </section>
+    <section class="p-6 bg-gradient-to-br from-gray-200 to-gray-50 shadow-2xl rounded-2xl max-w-lg mx-auto">
+        <h2 class="text-2xl font-bold text-center text-purple-600 mb-4">Rozwijany opis</h2>
+        <details class="group p-2 border border-gray-400 rounded-lg shadow-md open:bg-gray-100 transition-all duration-300">
+            <summary class="cursor-pointer text-lg font-semibold text-gray-700 hover:text-purple-500">
+                Kliknij, aby zobaczyć więcej
+            </summary>
+            <details class="group p-2 border-l-2 border-gray-400 ml-4 mt-2 open:bg-gray-50 transition-all duration-300">
+                <summary class="cursor-pointer text-gray-700 hover:text-purple-500">
+                    Kliknij, aby zobaczyć więcej
+                </summary>
+                <details class="group p-2 border-l-2 border-gray-400 ml-4 mt-2 open:bg-gray-50 transition-all duration-300">
+                    <summary class="cursor-pointer text-gray-700 hover:text-purple-500">
+                        Kliknij, aby zobaczyć więcej
+                    </summary>
+                    <details class="group p-2 border-l-2 border-gray-400 ml-4 mt-2 open:bg-gray-50 transition-all duration-300">
+                        <summary class="cursor-pointer text-gray-700 hover:text-purple-500">
+                            Kliknij, aby zobaczyć więcej
+                        </summary>
+                        <details class="group p-2 border-l-2 border-gray-400 ml-4 mt-2 open:bg-gray-50 transition-all duration-300">
+                            <summary class="cursor-pointer text-gray-700 hover:text-purple-500">
+                                Kliknij, aby zobaczyć więcej
+                            </summary>
+                            <p class="mt-2 text-gray-600">Spróbuj dolnego</p>
+                        </details>
+                        <details class="group p-2 border-l-2 border-gray-400 ml-4 mt-2 open:bg-gray-50 transition-all duration-300">
+                            <summary class="cursor-pointer text-gray-700 hover:text-purple-500">
+                                Kliknij, aby zobaczyć więcej
+                            </summary>
+                            <div class="relative w-24 h-24">
+                                <img src="trollface.png" alt="trollface" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black w-full h-full transition-transform duration-300 ease-in-out hover:translate-x-full"></div>
+                            </div>
+                        </details>
+                    </details>
+                </details>
+            </details>
+        </details>
+    </section>    
+    <section class="p-4">
+        <h2 class="text-xl text-yellow-500">Pasek postępu</h2>
+        <label for="progress">Postęp:</label>
+        <progress id="progress" value="70" max="100" class="animate-ping w-full"></progress>
+    </section>
+    <section>
+        <h2>Mapa Obrazkowa</h2>
+        <img src="flags.webp" alt="Mapa obrazkowa z flagami różnych krajów" usemap="#image-map">
+        <map name="image-map">
+            <area target="_blank" alt="Algeria" title="Algeria" href="https://pl.wikipedia.org/wiki/Algieria" coords="122,138,675,146,677,511,124,511" shape="poly">
+            <area target="_blank" alt="Nepal" title="Nepal" href="https://pl.wikipedia.org/wiki/Nepal" coords="1047,144,1045,510,1338,509,1143,325,1345,331" shape="poly">
+            <area target="_blank" alt="Switzerland" title="Switzerland" href="https://pl.wikipedia.org/wiki/Szwajcaria" coords="210,686,207,1049,579,1045,578,680" shape="poly">
+            <area target="_blank" alt="Ohio" title="Ohio" href="https://pl.wikipedia.org/wiki/Ohio" coords="901,695,1498,762,1362,873,1494,985,906,1054" shape="poly">
+        </map>
+    </section>
+    <div class="p-4">
+        <p class="text-blue-500">Zadanie 1</p>
+        <a href="index.html" class="text-red-500 hover:text-red-700">Strona z SCSS</a>
+    </div>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025</p>
+    </footer>
+</body>
+</html>
